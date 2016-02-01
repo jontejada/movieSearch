@@ -1,0 +1,8 @@
+<h2>movie.html</h2>
+<h3><i>full movie info:</i></h3>
+
+<!-- {{movieData}} -->
+<img src="{{movieData.Poster}}">
+<div ng-repeat="(key,value) in movieData">
+	<h3>{{key}} <span class="unbold">{{value}}</span></h3>
+</div>

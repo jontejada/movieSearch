@@ -1,0 +1,8 @@
+<h2>results.html</h2>
+<h3><i>click image for full movie info</i></h3>
+<ol>
+	<li ng-repeat="oneResult in movieData">
+		<a href="/#/movie/{{oneResult.imdbID}}"><img src="{{oneResult.Poster}}"></a>
+		<h4 ng-repeat="(key,value) in oneResult">{{key}} <span class="unbold">{{value}}</span></h4>
+	</li>
+</ol>
