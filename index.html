@@ -10,8 +10,17 @@
 <body ng-controller="BodyController">
 	<div id="header">
 		<h1>omdb search</h1>
+		<!--
 		<input type="text" name="title" id="titleInput" ng-model="title">
 		<button ng-click="search(title)">search</button>
+		-->
+		<form name="titleSearchForm" ng-submit="search(title)">
+			<label>search for a movie title: 
+				<input type="text" name="title" ng-model="title">
+			</label>
+			<button type="submit">search</button>
+		</form>
+
 	</div>
 	<div id="view" ng-view>
 	</div>
